@@ -7,7 +7,8 @@ import EventTarget from './EventTarget'
 import Blob from './Blob'
 import Log from '../utils/log.js'
 import fs from '../fs'
-
+import {NativeModules} from 'react-native';
+const RNFetchBlob = NativeModules.RNFetchBlob;
 const log = new Log('FileReader')
 
 log.level(3)
